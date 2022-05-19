@@ -11,7 +11,7 @@ const UserModel = require("../models").User;
 const userRoute = require("../routes/userRoute");
 
 router.use(paginationMiddleWare)
-router.use("/getAll", userRoute);
+router.use("/", userRoute);
 
 router.post(
   "/register",
